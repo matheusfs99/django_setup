@@ -14,8 +14,6 @@ services:
     volumes:
       - .:/code
       - ./data:/data
-    depends_on:
-      - db
     env_file: .env
     healthcheck:
       test: curl --fail http://localhost:8000 || exit 1
