@@ -14,4 +14,4 @@ def remove(filepath):
 create_user_app = "{{cookiecutter.user_app}}" == "y"
 
 if not create_user_app:
-    remove("apps/user")
+    remove("apps/accounts")
