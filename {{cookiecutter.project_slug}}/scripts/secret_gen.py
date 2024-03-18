@@ -1,10 +1,7 @@
-#!/usr/bin/env python
-"""
-Django SECRET_KEY generator.
-"""
-from django.utils.crypto import get_random_string
+import secrets
 
 
-def secret_gen():
-    chars = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)"
-    return get_random_string(50, chars)
+def generate_secret_key(length=50):
+    alphabet = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)"
+    secret_key = ''.join(secrets.choice(alphabet) for _ in range(length))
+    return secret_key

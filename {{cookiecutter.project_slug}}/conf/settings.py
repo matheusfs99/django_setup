@@ -31,6 +31,7 @@ DEBUG = config("DEBUG", default=True, cast=bool)
 ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="", cast=Csv())
 
 {%- if cookiecutter.user_app|lower == "y" %}
+
 AUTH_USER_MODEL = "accounts.User"
 {%- endif %}
 

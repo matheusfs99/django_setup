@@ -13,8 +13,6 @@ RUN pip install --upgrade pip && pip install -r $requirements_file
 
 COPY . /code/
 
-RUN python manage.py collectstatic --noinput
-
 # Determines whether the process running is active, running and healthy.
 HEALTHCHECK CMD ["curl", "--fail", "http://localhost:8000", "||", "exit 1"]
 

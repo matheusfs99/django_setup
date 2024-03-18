@@ -23,13 +23,3 @@ services:
       timeout: 10s
       start_period: 10s
       retries: 3
-
-  db:
-    image: "postgres:13.7-alpine"
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_DB: "db"
-      POSTGRES_PASSWORD: "postgres"
-    volumes:
-      - ".:/code:rw"
