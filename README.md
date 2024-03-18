@@ -47,3 +47,7 @@ Para rodas os testes, é necessário ter o [pytest-cookies](https://pytest-cooki
 Os testes do projeto consistem em simular a geração do projeto usando cookiecutter e testar o que foi criado.
 
 **OBS:** O projeto gerado tem a sua própria suíte de testes. Esses testes não são rodados dentro do teste do *template cookiecutter*.
+
+### Crédito
+
+Este projeto é baseado no [Django Base Capyba Day](https://github.com/rodrigo-capyba/django-base-capybaday)
