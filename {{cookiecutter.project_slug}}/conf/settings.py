@@ -63,7 +63,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "conf.urls.py-tpl"
+ROOT_URLCONF = "conf.urls"
 
 TEMPLATES = [
     {
