@@ -13,7 +13,7 @@ O objetivo deste projeto é fornecer uma base de código Django que servirá com
 
 2. Gerar o projeto a partir do template Django Setup (adicionar `--checkout nome-da-branch` para usar branch específica):
 ```bash
-cookiecutter git@github.com:matheusfs99/djangosetup.git
+cookiecutter git@github.com:matheusfs99/django_setup.git
 ```
 
 3. Configurar as variáveis pedidas pelo cookiecutter conforme desejado para o projeto (*project_name*, *project_slug*, etc.). Cada variável está descrita abaixo:
@@ -48,6 +48,6 @@ Os testes do projeto consistem em simular a geração do projeto usando cookiecu
 
 **OBS:** O projeto gerado tem a sua própria suíte de testes. Esses testes não são rodados dentro do teste do *template cookiecutter*.
 
-### Crédito
+## Crédito
 
 Este projeto é baseado no [Django Base Capyba Day](https://github.com/rodrigo-capyba/django-base-capybaday)
