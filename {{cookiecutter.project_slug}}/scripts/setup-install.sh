@@ -2,7 +2,7 @@
 
 # Create .env file
 if [ ! -f .env ]; then
-    cp env.example .env
+    cp .env-example .env
 fi
 
 docker-compose build
